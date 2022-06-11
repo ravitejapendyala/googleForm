@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="C:/Users/1021285/OneDrive - Blue Yonder/Documents/JavaSampleProjects/OrderForm/testng-order.xml(failed)">
+    <classes>
+      <class name="com.Assesment.tests.OrderRequest.OrderCreation">
+        <methods>
+          <include name="getDriver"/>
+          <include name="QuitDriver"/>
+          <include name="ValidateCreateOrder"/>
+        </methods>
+      </class> <!-- com.Assesment.tests.OrderRequest.OrderCreation -->
+    </classes>
+  </test> <!-- C:/Users/1021285/OneDrive - Blue Yonder/Documents/JavaSampleProjects/OrderForm/testng-order.xml(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
