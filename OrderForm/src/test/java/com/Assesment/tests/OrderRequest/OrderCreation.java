@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.Assesment.tests.DriverBase;
-
+import org.testng.asserts.SoftAssert;
 
 
 public class OrderCreation extends DriverBase {
@@ -97,6 +97,26 @@ public class OrderCreation extends DriverBase {
         Assert.assertTrue(elementMethods.VerifyElementExists("//span[text()='This is a required question']"));
 
         // Enter Phone Number
+
+    }
+
+    @Test(description = "Validate if mandatory fields are skipped & next button is clicked , then it should validate the presence of error  'This is a required question' ")
+    public void ValidateTestNGAsseert() throws Exception {
+        WebDriver driver = getDriver();
+        driver.get("https://www.facebook.com/");
+        //Creating softAssert object
+        SoftAssert softAssert = new SoftAssert();
+        //Assertion failing
+        softAssert.fail("Failing first assertion");
+        System.out.println("Failing 1");
+
+        Assert.assertTrue(false);
+
+        //Assertion failing
+        softAssert.fail("Failing second assertion");
+        System.out.println("Failing 2");
+        //Collates the assertion results and marks test as pass or fail
+        softAssert.assertAll();
 
     }
 }
